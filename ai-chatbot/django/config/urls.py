@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI
 from account.api import router as account_router
+from chat.api import router as chat_router
 
 api = NinjaAPI(csrf=True)
 
 api.add_router("/account", account_router)
+api.add_router("/", chat_router)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
