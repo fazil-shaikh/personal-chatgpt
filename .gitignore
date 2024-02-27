@@ -1,2 +1,11 @@
 venv/
 constants.py
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+
+# Django:
+*.log
+local_settings.py
+db.sqlite3
