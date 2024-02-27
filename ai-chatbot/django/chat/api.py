@@ -4,11 +4,15 @@ from typing import List, Optional
 from ninja import Router, Schema
 from .models import Session, Message
 import json
-from django.conf import settings
-import openai
+from openai import OpenAI
+from .constants import OPENAI_KEY
+
 
 # Set the openai key
-openai.api_key = settings.OPENAI_KEY
+client = OpenAI(
+    # defaults to os.environ.get("OPENAI_API_KEY")
+    api_key = OPENAI_KEY,
+)
 
 # API Router
 router = Router()
@@ -107,7 +111,7 @@ def create_chat(request, payload: ChatIn):
         message_array.append(message_dict)
 
     # send to OpenAI
-    chat = openai.ChatCompletion.create(
+    chat = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=message_array,
         temperature=0
