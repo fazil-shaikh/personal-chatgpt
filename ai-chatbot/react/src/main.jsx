@@ -1,10 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+// mounting point for the React application
+const container = document.getElementById('root');
+
+// generate a new root container for rendering components
+// this allows for a more fluid user experience
+const root = createRoot(container);
+
+root.render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-)
+  </BrowserRouter>
+);
