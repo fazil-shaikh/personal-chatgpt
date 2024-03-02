@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-content h1 {
+    @apply text-xl font-bold mt-3
+}
+
+.chat-content h2 {
+    @apply text-lg font-bold mt-3
+}
+
+.chat-content p {
+   @apply mb-1
+}
+
+.chat-content ul {
+    @apply list-disc pl-6 mb-3
+}
+
+.chat-content ol {
+    @apply list-decimal pl-6 mb-3
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
