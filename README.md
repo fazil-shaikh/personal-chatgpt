@@ -1,6 +1,6 @@
-# Private ChatGPT Clone
+# Personal ChatGPT Bot
 
-A private ChatGPT clone built with Django for the backend, React for the frontend, and powered by OpenAI's GPT-4. This application allows users to have secure and private conversations with an AI model.
+A private ChatGPT Bot built with Django for the backend, React for the frontend, and powered by OpenAI's GPT-4. This application allows users to have secure and private conversations with an AI model.
 
 ## Table of Contents
 
