@@ -86,7 +86,18 @@ A Personal ChatGPT Bot built with Django for the backend, React for the frontend
 1. Open a browser for your Vite/React dev server. For example, http://localhost:XXXX.
 2. Login using the http://localhost:XXXX/login link and the superuser you created on Django.
 3. Now go to your root URL of http://localhost:XXXX and start chatting with the AI!
-   
+
+## Screenshots
+
+### Backend: 
+   ![ChatAPIQuestion](screenshots/chatapiquestion.png)
+   ![ChatAPIAnswer](screenshots/chatapianswer.png)
+
+### Frontend: 
+   ![ChatLayout1](screenshots/chatlayout1.jpg)
+   ![ChatLayout2](screenshots/chatlayout2.jpg)
+   ![ChatLayout3](screenshots/chatlayout3.jpg)
+   ![ChatLayout4](screenshots/chatlayout4.jpg)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
